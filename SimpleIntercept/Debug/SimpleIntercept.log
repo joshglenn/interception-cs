@@ -1,0 +1,66 @@
+﻿Build started 3/14/2014 12:33:18 PM.
+Project "C:\Users\Josh\Documents\GitHub\interception-cs\SimpleIntercept\SimpleIntercept.vcxproj" on node 2 (rebuild target(s)).
+_PrepareForClean:
+  Deleting file "Debug\SimpleIntercept.lastbuildstate".
+InitializeBuildStatus:
+  Creating "Debug\SimpleIntercept.unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt interception.c utils.c
+  utils.c
+  interception.c
+c:\users\josh\documents\github\interception-cs\simpleintercept\interception.c(43): warning C4273: 'interception_create_context' : inconsistent dll linkage
+          c:\users\josh\documents\github\interception-cs\simpleintercept\interception.h(162) : see previous definition of 'interception_create_context'
+c:\users\josh\documents\github\interception-cs\simpleintercept\interception.c(91): warning C4273: 'interception_destroy_context' : inconsistent dll linkage
+          c:\users\josh\documents\github\interception-cs\simpleintercept\interception.h(164) : see previous definition of 'interception_destroy_context'
+c:\users\josh\documents\github\interception-cs\simpleintercept\interception.c(114): warning C4273: 'interception_get_precedence' : inconsistent dll linkage
+          c:\users\josh\documents\github\interception-cs\simpleintercept\interception.h(166) : see previous definition of 'interception_get_precedence'
+c:\users\josh\documents\github\interception-cs\simpleintercept\interception.c(126): warning C4273: 'interception_set_precedence' : inconsistent dll linkage
+          c:\users\josh\documents\github\interception-cs\simpleintercept\interception.h(168) : see previous definition of 'interception_set_precedence'
+c:\users\josh\documents\github\interception-cs\simpleintercept\interception.c(135): warning C4273: 'interception_get_filter' : inconsistent dll linkage
+          c:\users\josh\documents\github\interception-cs\simpleintercept\interception.h(170) : see previous definition of 'interception_get_filter'
+c:\users\josh\documents\github\interception-cs\simpleintercept\interception.c(147): warning C4273: 'interception_set_filter' : inconsistent dll linkage
+          c:\users\josh\documents\github\interception-cs\simpleintercept\interception.h(172) : see previous definition of 'interception_set_filter'
+c:\users\josh\documents\github\interception-cs\simpleintercept\interception.c(159): warning C4273: 'interception_wait' : inconsistent dll linkage
+          c:\users\josh\documents\github\interception-cs\simpleintercept\interception.h(174) : see previous definition of 'interception_wait'
+c:\users\josh\documents\github\interception-cs\simpleintercept\interception.c(164): warning C4273: 'interception_wait_with_timeout' : inconsistent dll linkage
+          c:\users\josh\documents\github\interception-cs\simpleintercept\interception.h(176) : see previous definition of 'interception_wait_with_timeout'
+c:\users\josh\documents\github\interception-cs\simpleintercept\interception.c(181): warning C4273: 'interception_send' : inconsistent dll linkage
+          c:\users\josh\documents\github\interception-cs\simpleintercept\interception.h(178) : see previous definition of 'interception_send'
+c:\users\josh\documents\github\interception-cs\simpleintercept\interception.c(243): warning C4273: 'interception_receive' : inconsistent dll linkage
+          c:\users\josh\documents\github\interception-cs\simpleintercept\interception.h(180) : see previous definition of 'interception_receive'
+c:\users\josh\documents\github\interception-cs\simpleintercept\interception.c(303): warning C4273: 'interception_get_hardware_id' : inconsistent dll linkage
+          c:\users\josh\documents\github\interception-cs\simpleintercept\interception.h(182) : see previous definition of 'interception_get_hardware_id'
+c:\users\josh\documents\github\interception-cs\simpleintercept\interception.c(315): warning C4273: 'interception_is_invalid' : inconsistent dll linkage
+          c:\users\josh\documents\github\interception-cs\simpleintercept\interception.h(184) : see previous definition of 'interception_is_invalid'
+c:\users\josh\documents\github\interception-cs\simpleintercept\interception.c(320): warning C4273: 'interception_is_keyboard' : inconsistent dll linkage
+          c:\users\josh\documents\github\interception-cs\simpleintercept\interception.h(186) : see previous definition of 'interception_is_keyboard'
+c:\users\josh\documents\github\interception-cs\simpleintercept\interception.c(325): warning C4273: 'interception_is_mouse' : inconsistent dll linkage
+          c:\users\josh\documents\github\interception-cs\simpleintercept\interception.h(188) : see previous definition of 'interception_is_mouse'
+  Generating Code...
+  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+  main.cpp
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Josh\Documents\GitHub\interception-cs\Debug\SimpleIntercept.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\SimpleIntercept.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Josh\Documents\GitHub\interception-cs\Debug\SimpleIntercept.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Josh\Documents\GitHub\interception-cs\Debug\SimpleIntercept.lib" /MACHINE:X86 Debug\interception.obj
+  Debug\main.obj
+  Debug\utils.obj
+     Creating library C:\Users\Josh\Documents\GitHub\interception-cs\Debug\SimpleIntercept.lib and object C:\Users\Josh\Documents\GitHub\interception-cs\Debug\SimpleIntercept.exp
+main.obj : warning LNK4217: locally defined symbol _interception_destroy_context imported in function _main
+main.obj : warning LNK4217: locally defined symbol _interception_send imported in function _main
+main.obj : warning LNK4217: locally defined symbol _interception_get_hardware_id imported in function _main
+main.obj : warning LNK4217: locally defined symbol _interception_receive imported in function _main
+main.obj : warning LNK4217: locally defined symbol _interception_wait imported in function _main
+main.obj : warning LNK4217: locally defined symbol _interception_is_mouse imported in function _main
+main.obj : warning LNK4217: locally defined symbol _interception_set_filter imported in function _main
+main.obj : warning LNK4217: locally defined symbol _interception_is_keyboard imported in function _main
+main.obj : warning LNK4217: locally defined symbol _interception_create_context imported in function _main
+  SimpleIntercept.vcxproj -> C:\Users\Josh\Documents\GitHub\interception-cs\Debug\SimpleIntercept.exe
+Manifest:
+  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\Josh\Documents\GitHub\interception-cs\Debug\SimpleIntercept.exe;#1" /manifest Debug\SimpleIntercept.exe.intermediate.manifest
+FinalizeBuildStatus:
+  Deleting file "Debug\SimpleIntercept.unsuccessfulbuild".
+  Touching "Debug\SimpleIntercept.lastbuildstate".
+Done Building Project "C:\Users\Josh\Documents\GitHub\interception-cs\SimpleIntercept\SimpleIntercept.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.40

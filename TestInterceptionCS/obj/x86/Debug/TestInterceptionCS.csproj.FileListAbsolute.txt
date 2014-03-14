@@ -1,0 +1,6 @@
+C:\Users\Josh\Documents\GitHub\interception-cs\TestInterceptionCS\bin\Debug\TestInterceptionCS.exe
+C:\Users\Josh\Documents\GitHub\interception-cs\TestInterceptionCS\bin\Debug\TestInterceptionCS.pdb
+C:\Users\Josh\Documents\GitHub\interception-cs\TestInterceptionCS\obj\x86\Debug\TestInterceptionCS.Properties.Resources.resources
+C:\Users\Josh\Documents\GitHub\interception-cs\TestInterceptionCS\obj\x86\Debug\TestInterceptionCS.csproj.GenerateResource.Cache
+C:\Users\Josh\Documents\GitHub\interception-cs\TestInterceptionCS\obj\x86\Debug\TestInterceptionCS.exe
+C:\Users\Josh\Documents\GitHub\interception-cs\TestInterceptionCS\obj\x86\Debug\TestInterceptionCS.pdb
