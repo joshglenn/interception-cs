@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterceptionCSLib", "Interc
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimpleIntercept", "SimpleIntercept\SimpleIntercept.vcxproj", "{DC72BE67-C451-4ECA-8993-53B997848AB8}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InterceptionCPlusForms", "InterceptionCPlusForms\InterceptionCPlusForms.vcxproj", "{AD56AE29-ADA0-4E00-ABDA-8F1D2D771621}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,18 @@ Global
 		{DC72BE67-C451-4ECA-8993-53B997848AB8}.Release|Win32.ActiveCfg = Release|Win32
 		{DC72BE67-C451-4ECA-8993-53B997848AB8}.Release|Win32.Build.0 = Release|Win32
 		{DC72BE67-C451-4ECA-8993-53B997848AB8}.Release|x86.ActiveCfg = Release|Win32
+		{AD56AE29-ADA0-4E00-ABDA-8F1D2D771621}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{AD56AE29-ADA0-4E00-ABDA-8F1D2D771621}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{AD56AE29-ADA0-4E00-ABDA-8F1D2D771621}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{AD56AE29-ADA0-4E00-ABDA-8F1D2D771621}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AD56AE29-ADA0-4E00-ABDA-8F1D2D771621}.Debug|Win32.Build.0 = Debug|Win32
+		{AD56AE29-ADA0-4E00-ABDA-8F1D2D771621}.Debug|x86.ActiveCfg = Debug|Win32
+		{AD56AE29-ADA0-4E00-ABDA-8F1D2D771621}.Release|Any CPU.ActiveCfg = Release|Win32
+		{AD56AE29-ADA0-4E00-ABDA-8F1D2D771621}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{AD56AE29-ADA0-4E00-ABDA-8F1D2D771621}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{AD56AE29-ADA0-4E00-ABDA-8F1D2D771621}.Release|Win32.ActiveCfg = Release|Win32
+		{AD56AE29-ADA0-4E00-ABDA-8F1D2D771621}.Release|Win32.Build.0 = Release|Win32
+		{AD56AE29-ADA0-4E00-ABDA-8F1D2D771621}.Release|x86.ActiveCfg = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

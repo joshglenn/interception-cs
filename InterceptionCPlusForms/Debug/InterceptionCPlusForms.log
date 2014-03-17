@@ -1,0 +1,28 @@
+﻿Build started 3/16/2014 1:18:30 PM.
+Project "C:\Users\Josh\Documents\GitHub\interception-cs\InterceptionCPlusForms\InterceptionCPlusForms.vcxproj" on node 2 (build target(s)).
+InitializeBuildStatus:
+  Touching "Debug\InterceptionCPlusForms.unsuccessfulbuild".
+ClCompile:
+  All outputs are up-to-date.
+  C:\Program Files (x86)\Microsoft Visual Studio 9.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\\" /AIC:\Windows\Microsoft.NET\Framework\v3.5\ /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\\" /AIC:\Windows\Microsoft.NET\Framework\v3.0\ /AIC:\Windows\Microsoft.NET\Framework\v2.0.50727\ /Zi /clr:pure /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\InterceptionCPlusForms.pch" /Fo"Debug\\" /Fd"Debug\vc90.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\System.Core.dll" /FUC:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Data.dll /FUC:\Windows\Microsoft.NET\Framework\v2.0.50727\System.dll /FUC:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Drawing.dll /FUC:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Windows.Forms.dll /FUC:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Xml.dll /analyze- /errorReport:prompt InterceptionCPlusForms.cpp /d1clr:nostdlib 
+  InterceptionCPlusForms.cpp
+CoreResGen:
+  No resources are out of date with respect to their source files. Skipping resource generation.
+ResourceCompile:
+  All outputs are up-to-date.
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 9.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Josh\Documents\GitHub\interception-cs\Debug\InterceptionCPlusForms.exe" /INCREMENTAL /NOLOGO /ASSEMBLYRESOURCE:Debug\InterceptionCPlusForms.Form1.resources /MANIFEST /ManifestFile:"Debug\InterceptionCPlusForms.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Josh\Documents\GitHub\interception-cs\Debug\InterceptionCPlusForms.pdb" /ASSEMBLYDEBUG /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"main" /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Debug\app.res
+  Debug\AssemblyInfo.obj
+  Debug\InterceptionCPlusForms.obj
+  Debug\stdafx.obj
+  InterceptionCPlusForms.vcxproj -> C:\Users\Josh\Documents\GitHub\interception-cs\Debug\InterceptionCPlusForms.exe
+Manifest:
+  C:\Program Files\Microsoft SDKs\Windows\v6.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\Josh\Documents\GitHub\interception-cs\Debug\InterceptionCPlusForms.exe;#1" /manifest Debug\InterceptionCPlusForms.exe.intermediate.manifest
+FinalizeBuildStatus:
+  Deleting file "Debug\InterceptionCPlusForms.unsuccessfulbuild".
+  Touching "Debug\InterceptionCPlusForms.lastbuildstate".
+Done Building Project "C:\Users\Josh\Documents\GitHub\interception-cs\InterceptionCPlusForms\InterceptionCPlusForms.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.28
