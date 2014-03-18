@@ -1,0 +1,9 @@
+C:\Users\Josh\Documents\GitHub\interception-cs\kchordr\bin\Debug\kchordr.exe
+C:\Users\Josh\Documents\GitHub\interception-cs\kchordr\bin\Debug\kchordr.pdb
+C:\Users\Josh\Documents\GitHub\interception-cs\kchordr\obj\x86\Debug\kchordr.Properties.Resources.resources
+C:\Users\Josh\Documents\GitHub\interception-cs\kchordr\obj\x86\Debug\kchordr.csproj.GenerateResource.Cache
+C:\Users\Josh\Documents\GitHub\interception-cs\kchordr\obj\x86\Debug\kchordr.exe
+C:\Users\Josh\Documents\GitHub\interception-cs\kchordr\obj\x86\Debug\kchordr.pdb
+C:\Users\Josh\Documents\GitHub\interception-cs\kchordr\bin\Debug\interception.dll
+C:\Users\Josh\Documents\GitHub\interception-cs\kchordr\obj\x86\Debug\kchordr.InterceptionDemoForm.resources
+C:\Users\Josh\Documents\GitHub\interception-cs\kchordr\obj\x86\Debug\kchordr.csprojResolveAssemblyReference.cache

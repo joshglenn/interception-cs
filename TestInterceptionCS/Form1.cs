@@ -43,16 +43,12 @@ namespace TestInterceptionCS
         //public delegate int InterceptionPredicate(int device);
 
 
-        /// <summary>
-        /// The callback function.
-        /// </summary>
-        /// <param name="device"></param>
-        /// <returns></returns>
-        [UnmanagedFunctionPointer(CallingConvention.StdCall)]
-        public delegate int InterceptionPredicate(int device);
+        [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
+        public delegate void InterceptionPredicateType(Int32 device);
 
-        //[UnmanagedFunctionPointer(CallingConvention.StdCall)]
-        //delegate void ProgressCallback(int value);
+        [DllImport("interception.dll")]
+        public extern static InterceptionPredicateType interception_is_keyboard(IntPtr context, InterceptionPredicateType predicate, Int32 filter);
+
 
         [System.Runtime.InteropServices.StructLayoutAttribute(System.Runtime.InteropServices.LayoutKind.Sequential)]
         public struct InterceptionMouseStroke
@@ -125,17 +121,17 @@ namespace TestInterceptionCS
         ///predicate: InterceptionPredicate
         ///filter: InterceptionFilter->unsigned short
         [System.Runtime.InteropServices.DllImportAttribute("interception.dll", EntryPoint = "interception_set_filter")]
-        public static extern void interception_set_filter(System.IntPtr context, System.IntPtr predicate, ushort filter);
+        public static extern void interception_set_filter(System.IntPtr context, InterceptionPredicateType predicate, ushort filter);
 
         /// Return Type: int
         ///device: InterceptionDevice->int
         [System.Runtime.InteropServices.DllImportAttribute("interception.dll", EntryPoint = "interception_is_keyboard")]
-        public static extern System.IntPtr interception_is_keyboard(int device);
+        public static extern Int32 interception_is_keyboard(int device);
         
         /// Return Type: int
         ///device: InterceptionDevice->int
-        [System.Runtime.InteropServices.DllImportAttribute("interception.dll", EntryPoint = "interception_is_keyboard")]
-        public static extern int interception_is_keyboard();
+        //[System.Runtime.InteropServices.DllImportAttribute("interception.dll", EntryPoint = "interception_is_keyboard")]
+        //public static extern int interception_is_keyboard();
     }
 
     public partial class Form1 : Form
@@ -179,7 +175,7 @@ namespace TestInterceptionCS
 
             //NativeMethods.InterceptionPredicate = new NativeMethods.InterceptionPredicate(0);
 
-           
+
 
             //NativeMethods.interception_set_filter(
             //    context, NativeMethods.interception_is_keyboard,
@@ -193,13 +189,16 @@ namespace TestInterceptionCS
             //int dd = NativeMethods.interception_is_keyboard();
 
 
-            //while (NativeMethods.interception_receive(context, device = NativeMethods.interception_wait(context), ref stroke, 1) > 0)
-            //{ 
-            //    Console.WriteLine("Bob");
-            //}
+
 
             // Normal windows forms processing
             InitializeComponent();
+            
+            
+            while (NativeMethods.interception_receive(context, device = NativeMethods.interception_wait(context), ref stroke, 1) > 0)
+            {
+                Console.WriteLine("Bob");
+            }
 
         }
     }

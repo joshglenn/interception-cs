@@ -2,3 +2,4 @@ C:\Users\Josh\Documents\GitHub\interception-cs\InterceptionCSLib\bin\x86\Debug\I
 C:\Users\Josh\Documents\GitHub\interception-cs\InterceptionCSLib\bin\x86\Debug\InterceptionCSLib.pdb
 C:\Users\Josh\Documents\GitHub\interception-cs\InterceptionCSLib\obj\x86\Debug\InterceptionCSLib.dll
 C:\Users\Josh\Documents\GitHub\interception-cs\InterceptionCSLib\obj\x86\Debug\InterceptionCSLib.pdb
+C:\Users\Josh\Documents\GitHub\interception-cs\InterceptionCSLib\obj\x86\Debug\InterceptionCSLib.csprojResolveAssemblyReference.cache
