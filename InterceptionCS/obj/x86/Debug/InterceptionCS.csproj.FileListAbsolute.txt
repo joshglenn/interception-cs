@@ -1,0 +1,8 @@
+C:\Users\Josh\Documents\GitHub\interception-cs\InterceptionCS\obj\x86\Debug\InterceptionCS.Properties.Resources.resources
+C:\Users\Josh\Documents\GitHub\interception-cs\InterceptionCS\obj\x86\Debug\InterceptionCS.csproj.GenerateResource.Cache
+C:\Users\Josh\Documents\GitHub\interception-cs\InterceptionCS\obj\x86\Debug\InterceptionCS.InterceptionDemoForm.resources
+C:\Users\Josh\Documents\GitHub\interception-cs\InterceptionCS\bin\Debug\InterceptionCS.exe
+C:\Users\Josh\Documents\GitHub\interception-cs\InterceptionCS\bin\Debug\InterceptionCS.pdb
+C:\Users\Josh\Documents\GitHub\interception-cs\InterceptionCS\obj\x86\Debug\InterceptionCS.exe
+C:\Users\Josh\Documents\GitHub\interception-cs\InterceptionCS\obj\x86\Debug\InterceptionCS.pdb
+C:\Users\Josh\Documents\GitHub\interception-cs\InterceptionCS\bin\Debug\interception.dll

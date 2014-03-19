@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
 
 namespace kchordr
 {
@@ -28,6 +29,8 @@ namespace kchordr
         /// </summary>
         private static void MonitorKeystrokes()
         {
+
+
             IntPtr context;
             int device;
             Interception.Stroke stroke = new Interception.Stroke();
@@ -54,9 +57,16 @@ namespace kchordr
             }
         }
 
+        /// <summary>
+        /// Starts a loop waiting for keyboard events, then writes the 
+        /// output to the console. when running this method, the UI will block and it
+        /// will appear that the application is frozen. But the keystrokes will still be logged
+        /// to the debugging console. To break out of this method and release the block on the
+        /// UI, press the Esc key.
+        /// </summary>
         private static void GetHardwareID()
         {
-            //size_t length = interception_get_hardware_id(context, device, hardware_id, sizeof(hardware_id));
+            int errorCode = Marshal.GetLastWin32Error();
 
             IntPtr context;
             int device;
@@ -72,8 +82,6 @@ namespace kchordr
             {
                 Console.WriteLine("SCAN CODE: {0}/{1}", stroke.key.code, stroke.key.state);
 
-                
-                //byte[] hwid = new byte[500];
                 uint iXX = Interception.interception_get_hardware_id(context, device, sb, (uint)sb.Capacity);
                 
                 string s = sb.ToString();
@@ -88,21 +96,17 @@ namespace kchordr
                 {
                     Console.WriteLine("Message here");
                 }
-                //sb = null;
-                
-                if (stroke.key.code == ScanCode.X)
-                {
-                    stroke.key.code = ScanCode.Y;
-                }
-                
+               
                 Interception.Send(context, device, ref stroke, 1);
 
-                // Hitting escape terminates the program
+                // Hitting escape terminates this method 
+                // and returns control to windows.
                 if (stroke.key.code == ScanCode.Escape)
                 {
                     break;
                 }
             }
+            Interception.DestroyContext(context);
         }
 
         private void monitorWithHardwareIDToolStripMenuItem_Click(object sender, EventArgs e)

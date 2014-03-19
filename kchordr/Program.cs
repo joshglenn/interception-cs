@@ -101,7 +101,7 @@ namespace kchordr
         public static extern int Wait(IntPtr context);
 
         //unsigned int ITERCEPTION_API interception_get_hardware_id(InterceptionContext context, InterceptionDevice device, void *hardware_id_buffer, unsigned int buffer_size);
-        [DllImport("interception.dll", EntryPoint = "interception_get_hardware_id", CallingConvention = CallingConvention.Cdecl)]
+        [DllImport("interception.dll", SetLastError = true, EntryPoint = "interception_get_hardware_id", CallingConvention = CallingConvention.Cdecl)]
         public static extern uint interception_get_hardware_id(System.IntPtr context, int device,
                                                                [MarshalAs(UnmanagedType.LPWStr)]StringBuilder hardware_id_buffer, uint buffer_size);
         

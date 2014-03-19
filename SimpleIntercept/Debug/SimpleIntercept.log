@@ -1,4 +1,4 @@
-﻿Build started 3/18/2014 8:46:26 PM.
+﻿Build started 3/19/2014 11:50:05 AM.
 Project "C:\Users\Josh\Documents\GitHub\interception-cs\SimpleIntercept\SimpleIntercept.vcxproj" on node 2 (build target(s)).
 InitializeBuildStatus:
   Creating "Debug\SimpleIntercept.unsuccessfulbuild" because "AlwaysCreate" was specified.
@@ -15,4 +15,4 @@ Done Building Project "C:\Users\Josh\Documents\GitHub\interception-cs\SimpleInte
 
 Build succeeded.
 
-Time Elapsed 00:00:00.08
+Time Elapsed 00:00:00.06
