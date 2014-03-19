@@ -12,13 +12,10 @@ namespace kchordr
     public partial class InterceptionDemoForm : Form
     {
 
-        //public IntPtr context;
-        //public int device;
-        //public Interception.Stroke stroke = new Interception.Stroke();
-
         public InterceptionDemoForm()
         {
             InitializeComponent();
+            
         }
 
         private void monitorKeystrokesToolStripMenuItem_Click(object sender, EventArgs e)
@@ -69,12 +66,16 @@ namespace kchordr
 
             Interception.SetFilter(context, Interception.IsKeyboard, Interception.Filter.All);
 
+            StringBuilder sb = new StringBuilder(500);
+
             while (Interception.Receive(context, device = Interception.Wait(context), ref stroke, 1) > 0)
             {
                 Console.WriteLine("SCAN CODE: {0}/{1}", stroke.key.code, stroke.key.state);
+
                 
-                StringBuilder sb = new StringBuilder(500);
-                uint iXX = Interception.interception_get_hardware_id(context, device, sb, sb.Capacity);
+                //byte[] hwid = new byte[500];
+                uint iXX = Interception.interception_get_hardware_id(context, device, sb, (uint)sb.Capacity);
+                
                 string s = sb.ToString();
 
                 if (iXX > 0)
@@ -87,7 +88,7 @@ namespace kchordr
                 {
                     Console.WriteLine("Message here");
                 }
-                sb = null;
+                //sb = null;
                 
                 if (stroke.key.code == ScanCode.X)
                 {
@@ -107,6 +108,11 @@ namespace kchordr
         private void monitorWithHardwareIDToolStripMenuItem_Click(object sender, EventArgs e)
         {
             GetHardwareID();
+        }
+
+        private void InterceptionDemoForm_Load(object sender, EventArgs e)
+        {
+            
         }
 
     }

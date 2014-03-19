@@ -57,7 +57,7 @@
             // monitorKeystrokesToolStripMenuItem
             // 
             this.monitorKeystrokesToolStripMenuItem.Name = "monitorKeystrokesToolStripMenuItem";
-            this.monitorKeystrokesToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.monitorKeystrokesToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
             this.monitorKeystrokesToolStripMenuItem.Text = "Monitor Keystrokes";
             this.monitorKeystrokesToolStripMenuItem.Click += new System.EventHandler(this.monitorKeystrokesToolStripMenuItem_Click);
             // 
@@ -77,6 +77,7 @@
             this.MainMenuStrip = this.MainMenu;
             this.Name = "InterceptionDemoForm";
             this.Text = "InterceptionDemoForm";
+            this.Load += new System.EventHandler(this.InterceptionDemoForm_Load);
             this.MainMenu.ResumeLayout(false);
             this.MainMenu.PerformLayout();
             this.ResumeLayout(false);
